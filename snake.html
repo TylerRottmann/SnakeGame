@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport", 
+          content="width=device-width, initial-scale=1.0">
+    <title>Snake Game by Tyler</title>
+    <link rel="stylesheet" href="snake.css">
+</head>
+
+<body>
+    <div id="score">Score: 0</div>
+    <div id="high-score">High Score: 0</div>
+    <canvas id="board"></canvas>
+    <script src="snake.js"></script>
+    <div class="settings-container">
+        <div id="speed" class="settings-column">
+            <p>Speed:</p>
+            <button id="slow" class="speedBtn">Slow</button>
+            <button id="medium" class="speedBtn">Medium</button>
+            <button id="fast" class="speedBtn">Fast</button>
+        </div>
+        <div id="game-mode" class="settings-column">
+            <p>Game Mode:</p>
+            <select name="game-mode-dropdown" id="game-mode-dropdown">
+                <option value="normal" selected>Normal</option>
+                <option value="night-mode">Night Mode</option>
+                <option value="inverted-controls">Inverted Controls</option>
+                <option value="speedy-snake">Speedy Snake</option>
+            </select>
+        </div>
+        <div id="size" class="settings-column">
+            <p>Board Size:</p>
+            <button id="smallSize" class="sizeBtn">Small</button>
+            <button id="mediumSize" class="sizeBtn">Medium</button>
+            <button id="largeSize" class="sizeBtn">Large</button>
+        </div>
+    </div>    
+</body>
+
+</html>
